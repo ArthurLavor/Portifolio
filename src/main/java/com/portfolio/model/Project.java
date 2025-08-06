@@ -1,4 +1,4 @@
-package com.portifolio.model;
+package com.portfolio.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -7,7 +7,7 @@ import java.util.List;
 
 @Document(collection = "projects")
 
-public class portifolio {
+public class Project {
     @Id
     private String id;
     private String name;
@@ -26,10 +26,10 @@ public class portifolio {
     private boolean isFeatured;
 
     //criação do constructor padrão
-    public portifolio(){
+    public Project(){
     }
     //construtor com todos os campos (opcional, nova forma de criar)
-    public portifolio(String id, String name, String shortDescription, String longDescription, List<String> technologiesUsed, String projectType, String status, String startDate, String endDate, String githubUrl, String liveDemoUrl, List<String> imageUrls, Model3D model3d, List<String> externalApiIntegrations, boolean isFeatured) {
+    public Project(String id, String name, String shortDescription, String longDescription, List<String> technologiesUsed, String projectType, String status, String startDate, String endDate, String githubUrl, String liveDemoUrl, List<String> imageUrls, Model3D model3d, List<String> externalApiIntegrations, boolean isFeatured) {
         this.id = id;
         this.name = name;
         this.shortDescription = shortDescription;
