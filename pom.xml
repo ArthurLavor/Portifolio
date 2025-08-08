@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.portifolio</groupId>
-	<artifactId>portifolio</artifactId>
+	<artifactId>portfolio</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>portifolio</name>
 	<description>projeto portifolio</description>
@@ -44,7 +44,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.7.0</version>
+		</dependency>
 	</dependencies>
+
+
 
 	<build>
 		<plugins>
